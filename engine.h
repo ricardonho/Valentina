@@ -7,6 +7,14 @@
 #include <math.h>
 #include <stdarg.h>
 
+#include "configuration.h"
+
+#ifdef __USING_GLUT__
+
+#include <GL/glut.h>
+
+#endif //__USING_GLUT__
+
 #ifdef __cplusplus
    extern “C” {
 #endif
@@ -22,12 +30,15 @@ enum RenderEngineEnum {
 
 typedef struct EngineType {
 
+  char windowTitle[256];
   unsigned int renderEngine;
   unsigned int width;
   unsigned int height;
   DISPLAY_FUNCTION display;
 
 } Engine;
+
+void engine_default_glut_display();
 
 unsigned int engine_run(Engine* engine, int argc, char* argv[]);
 

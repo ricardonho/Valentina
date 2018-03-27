@@ -1,0 +1,6 @@
+#ifndef __ENGINE_CONFIGURATION_H__
+#define __ENGINE_CONFIGURATION_H__
+
+#define __USING_GLUT__
+
+#endif //__ENGINE_CONFIGURATION_H__

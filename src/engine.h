@@ -9,6 +9,14 @@
 
 #include "configuration.h"
 
+#include "primitives.h"
+#include "3ds.h"
+#include "light.h"
+#include "camera.h"
+#include "entity.h"
+#include "layer.h"
+#include "scene.h"
+
 #ifdef __USING_GLUT__
 
 #include <GL/glut.h>

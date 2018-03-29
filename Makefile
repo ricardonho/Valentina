@@ -2,7 +2,7 @@ CC=gcc
 GDB=-g -ggdb
 
 all:
-	$(CC) $(GDB) -c *.c
+	$(CC) $(GDB) -c src/*.c
 	ar -cvq bin/libvalentina.a *.o
 
 clear:
